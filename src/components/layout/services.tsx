@@ -41,7 +41,7 @@ export default function Services() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-px bg-slate-800/50 border border-slate-800 rounded-3xl overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-px bg-slate-800/50 border border-gold-800 rounded-3xl overflow-hidden">
                     {services.map((s) => (
                         <div
                             key={s.title}

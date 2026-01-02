@@ -7,6 +7,7 @@ import Testimonials from "@/components/layout/testimonials";
 import Contact from "@/components/layout/contact-form";
 import Footer from "@/components/layout/footer";
 import StickyCTA from "@/components/layout/sticky-cta";
+import LogoCarousel from "@/components/layout/logo-carousel";
 
 export default function LandingPage() {
     return (
@@ -17,6 +18,7 @@ export default function LandingPage() {
             {/* Content sections remain relative and z-10 to stay above the glow */}
             <div className="relative z-10">
                 <Hero />
+                <LogoCarousel></LogoCarousel>
                 <Services />
                 <Testimonials />
                 <Contact />

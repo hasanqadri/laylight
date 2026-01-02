@@ -10,19 +10,6 @@ export default function Footer() {
                         Your personal job coach
                     </p>
                 </div>
-
-                <FooterColumn
-                    title="Learn"
-                    links={["Courses", "Partnerships"]}
-                />
-                <FooterColumn
-                    title="Company"
-                    links={["About", "Contact"]}
-                />
-                <FooterColumn
-                    title="Legal"
-                    links={["Privacy Policy", "Terms of Use", "Cookies"]}
-                />
             </div>
 
             <div className="max-w-[1320px] mx-auto mt-12 px-6 border-t border-slate-200 pt-6 text-sm">
