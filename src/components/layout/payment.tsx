@@ -18,7 +18,7 @@ export default function Payment() {
                 "Cover Letter Template",
             ],
             // Replace these with your actual Stripe Payment Link URLs
-            link: "https://buy.stripe.com/test_8x2aEXgtd3uGcYJ3uI5os00",
+            link: "https://buy.stripe.com/test_00w5kD3Gr0iue2Nghu5os02",
             popular: false
         },
         {
@@ -34,13 +34,13 @@ export default function Payment() {
                 "Salary Negotiation Scripts",
                 "Direct Email Access"
             ],
-            link: "https://buy.stripe.com/test_00w5kD3Gr0iue2Nghu5os02",
+            link: "https://buy.stripe.com/test_8x2aEXgtd3uGcYJ3uI5os00",
             popular: true
         },
         {
             id: 3,
             name: "Executive Retainer",
-            price: "300",
+            price: "500",
             period: "month",
             desc: "Unlimited access. I become your personal career agent.",
             features: [
@@ -138,7 +138,7 @@ export default function Payment() {
                                     <div className="flex gap-3 items-start">
                                         <ShieldCheck className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
                                         <p className="text-slate-400 text-xs leading-relaxed text-left">
-                                            If you do not secure a new position within <span className="text-white font-medium">120 days</span> of our engagement as an executive retainer, we will refund your investment in full, if asked.
+                                            If you do not secure a new position within <span className="text-white font-medium">180 days</span> of our engagement as an executive retainer, we will refund your investment in full, if asked.
                                         </p>
                                     </div>
                                 </div>
