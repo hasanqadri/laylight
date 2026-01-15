@@ -123,13 +123,6 @@ export default function Payment() {
                                     Secure Checkout
                                 </a>
 
-                                <div className="text-center">
-                                    <span className="text-xs text-slate-600">or </span>
-                                    <a href={plan.link} className="text-xs text-slate-500 hover:text-blue-400 underline decoration-slate-700 underline-offset-4">
-                                        pay via invoice
-                                    </a>
-                                </div>
-
                                 {/* LAYOUT FIX:
                   We render this block for ALL plans to ensure equal height and alignment,
                   but we make it invisible (opacity-0) for plans 1 & 2.
