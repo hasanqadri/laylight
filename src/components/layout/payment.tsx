@@ -8,7 +8,7 @@ export default function Payment() {
     const plans = [
         {
             id: 1,
-            name: "The Resume Audit",
+            name: "The Resume Review",
             price: "100",
             period: "one-time",
             desc: "Perfect for those who just need their documents polished for ATS.",
@@ -46,7 +46,7 @@ export default function Payment() {
             features: [
                 "Everything in lower tiers",
                 "Unlimited Coaching Calls",
-                "Direct WhatsApp Access",
+                "Direct SMS/WhatsApp/Messaging Access",
                 "Networking Strategy & Intros",
                 "Onboarding Support (First 30 Days)",
             ],
@@ -131,9 +131,12 @@ export default function Payment() {
                                     <div className="flex gap-3 items-start">
                                         <ShieldCheck className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
                                         <p className="text-slate-400 text-xs leading-relaxed text-left">
-                                            If you do not secure a new position within <span className="text-white font-medium">180 days</span> of our engagement as an executive retainer, we will refund your investment in full, if asked.
+                                            If you do not secure a new position within <span className="text-white font-medium">180 days</span> of our engagement as an executive retainer, we will refund your investment in full, if asked.*
                                         </p>
                                     </div>
+                                    <p className="text-slate-400 text-[0.625rem] pt-4 leading-relaxed text-left">
+                                    *Terms and Conditions apply
+                                    </p>
                                 </div>
                             </div>
                         </div>
