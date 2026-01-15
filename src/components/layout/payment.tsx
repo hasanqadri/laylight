@@ -1,7 +1,7 @@
 "use client";
 
 import {useState} from "react";
-import {Check, CreditCard, X, Lock} from "lucide-react";
+import {Check, CreditCard, X, Lock, ShieldCheck} from "lucide-react";
 export default function Payment() {
     // No state needed anymore since we are linking directly to Stripe
 
@@ -9,7 +9,7 @@ export default function Payment() {
         {
             id: 1,
             name: "The Resume Audit",
-            price: "150",
+            price: "100",
             period: "one-time",
             desc: "Perfect for those who just need their documents polished for ATS.",
             features: [
@@ -18,13 +18,13 @@ export default function Payment() {
                 "Cover Letter Template",
             ],
             // Replace these with your actual Stripe Payment Link URLs
-            link: "https://buy.stripe.com/test_1",
+            link: "https://buy.stripe.com/test_8x2aEXgtd3uGcYJ3uI5os00",
             popular: false
         },
         {
             id: 2,
             name: "Total Career Pivot",
-            price: "400",
+            price: "200",
             period: "one-time",
             desc: "A complete overhaul for your next big jump into a new industry.",
             features: [
@@ -34,27 +34,27 @@ export default function Payment() {
                 "Salary Negotiation Scripts",
                 "Direct Email Access"
             ],
-            link: "https://buy.stripe.com/test_2",
+            link: "https://buy.stripe.com/test_00w5kD3Gr0iue2Nghu5os02",
             popular: true
         },
         {
             id: 3,
             name: "Executive Retainer",
-            price: "600",
+            price: "300",
             period: "month",
             desc: "Unlimited access. I become your personal career agent.",
             features: [
-                "Everythign in lower tiers",
+                "Everything in lower tiers",
                 "Unlimited Coaching Calls",
                 "Direct WhatsApp Access",
                 "Networking Strategy & Intros",
-                "Offer Letter Legal Review",
-                "Onboarding Support (First 30 Days)"
+                "Onboarding Support (First 30 Days)",
             ],
-            link: "https://buy.stripe.com/test_3",
+            link: "https://buy.stripe.com/test_bJe14nb8T9T41g11mA5os03",
             popular: false
         }
     ];
+
 
     return (
         <section id="payment" className="py-24 bg-slate-950 relative">
@@ -73,7 +73,7 @@ export default function Payment() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
                     {plans.map((plan) => (
                         <div
                             key={plan.id}
@@ -111,9 +111,6 @@ export default function Payment() {
                             </ul>
 
                             <div className="space-y-3">
-                                {/* CHANGE: This is now a direct link (<a>) instead of a button.
-                  It will navigate directly to the plan.link (Stripe URL).
-                */}
                                 <a
                                     href={plan.link}
                                     className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center ${
@@ -131,6 +128,19 @@ export default function Payment() {
                                     <a href={plan.link} className="text-xs text-slate-500 hover:text-blue-400 underline decoration-slate-700 underline-offset-4">
                                         pay via invoice
                                     </a>
+                                </div>
+
+                                {/* LAYOUT FIX:
+                  We render this block for ALL plans to ensure equal height and alignment,
+                  but we make it invisible (opacity-0) for plans 1 & 2.
+                */}
+                                <div className={`mt-6 pt-4 border-t border-slate-800/50 ${plan.id === 3 ? 'opacity-100' : 'opacity-0 select-none'}`}>
+                                    <div className="flex gap-3 items-start">
+                                        <ShieldCheck className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                                        <p className="text-slate-400 text-xs leading-relaxed text-left">
+                                            If you do not secure a new position within <span className="text-white font-medium">120 days</span> of our engagement as an executive retainer, we will refund your investment in full, if asked.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

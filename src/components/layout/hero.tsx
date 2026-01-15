@@ -22,7 +22,7 @@ export default function Hero() {
                 {/* text-center on mobile, text-left on desktop */}
                 <div className="max-w-4xl text-center md:text-left">
                     <h1 className="text-4xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-8 tracking-tight leading-tight">
-                        Hi, I’m Syed. I help people navigate their next big move. Your path to the top, <span className="text-yellow-400 text-shadow-lg font-extrabold">illuminated.</span>
+                        Hello, we help people navigate their next big move. Your path to the top, <span className="text-yellow-400 text-shadow-lg font-extrabold">illuminated.</span>
                     </h1>
 
                     <div className="flex flex-col md:flex-row items-center md:items-start">
