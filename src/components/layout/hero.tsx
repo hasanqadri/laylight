@@ -6,7 +6,7 @@ export default function Hero() {
             {/* 1. Background Image Layer */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/syed2.png" // Replace with your actual image path
+                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop"
                     alt="Syed Career Consulting"
                     className="h-full w-full object-cover object-center md:object-right"
                 />

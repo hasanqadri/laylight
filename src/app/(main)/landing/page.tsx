@@ -8,6 +8,7 @@ import Contact from "@/components/layout/contact-form";
 import Footer from "@/components/layout/footer";
 import StickyCTA from "@/components/layout/sticky-cta";
 import LogoCarousel from "@/components/layout/logo-carousel";
+import Payment from "@/components/layout/payment";
 
 export default function LandingPage() {
     return (
@@ -20,6 +21,7 @@ export default function LandingPage() {
                 <Hero />
                 <LogoCarousel></LogoCarousel>
                 <Services />
+                <Payment />
                 <Testimonials />
                 <Contact />
             </div>
