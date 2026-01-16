@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         siteName: "Laylight",
         images: [
             {
-                url: "https://laylight.com/images/share-preview.png", // Must be an absolute URL
+                url: "/opengraph-image.png", // Must be an absolute URL
                 width: 1200,
                 height: 630,
                 alt: "Laylight Career Consulting Preview",
