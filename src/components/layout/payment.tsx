@@ -18,7 +18,7 @@ export default function Payment() {
                 "Cover Letter Template",
             ],
             // Replace these with your actual Stripe Payment Link URLs
-            link: "https://buy.stripe.com/test_00w5kD3Gr0iue2Nghu5os02",
+            link: "https://buy.stripe.com/8x2cN4dEsfUI6Kkewugw001",
             popular: false
         },
         {
@@ -34,7 +34,7 @@ export default function Payment() {
                 "Salary Negotiation Scripts",
                 "Direct Email Access"
             ],
-            link: "https://buy.stripe.com/test_8x2aEXgtd3uGcYJ3uI5os00",
+            link: "https://buy.stripe.com/28EdR8bwk37Wd8IfAygw002",
             popular: true
         },
         {
@@ -50,7 +50,7 @@ export default function Payment() {
                 "Networking Strategy & Intros",
                 "Onboarding Support (First 30 Days)",
             ],
-            link: "https://buy.stripe.com/test_bJe14nb8T9T41g11mA5os03",
+            link: "https://buy.stripe.com/fZucN42ZO23S8Ss0FEgw000",
             popular: false
         }
     ];
