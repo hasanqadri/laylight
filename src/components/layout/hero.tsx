@@ -18,12 +18,16 @@ export default function Hero() {
             </div>
 
             {/* 3. Content Layer */}
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto relative z-10">
                 {/* text-center on mobile, text-left on desktop */}
-                <div className="max-w-4xl text-center md:text-left">
-                    <h1 className="text-4xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-8 tracking-tight leading-tight">
-                        Hello, we help people navigate their next big move. Your path to the top, <span className="text-yellow-400 text-shadow-lg font-extrabold">illuminated.</span>
+                <div className="max-w-6xl text-center md:text-left">
+                    <h1 className="text-4xl sm:text-2xl md:text-4xl lg:text-7xl font-bold mb-8 tracking-tight leading-tight">
+                        Cybersecurity Resumes <br></br>That Get You <span className="text-yellow-400 text-shadow-lg font-extrabold">Hired</span><p></p>
                     </h1>
+                    <h2 className="text-xl mb-8 sm:text-2xl md:text-3xl lg:text-4xl">
+                        Expert resume writing, cover letters, and job search support tailored for cybersecurity, software development professionals and more.
+                    </h2>
+                    <p></p><br></br>
 
                     <div className="flex flex-col md:flex-row items-center md:items-start">
                         <a
